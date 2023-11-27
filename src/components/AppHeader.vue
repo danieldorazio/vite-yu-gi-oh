@@ -8,8 +8,15 @@ export default {
 </script>
 
 <template>
-    <section class="header"></section>
+    <section class="header d-flex">
+        <div class="logo">
+            <img class="h-100" src="../assets/img/800px-Yu-Gi-Oh!_(Logo).jpg" alt="">
+        </div>
+        
+        <h1>Yu-Gi-Oh Api</h1>
+    </section>
 </template>
 
 <style scoped lang="scss">
+@use '../style/partials/AppHeader.scss'
 </style>
