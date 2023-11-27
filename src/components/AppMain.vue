@@ -15,10 +15,8 @@ export default {
         };
     },
 
-    methods: {
-        getImagePath: function(img) {
-            return new URL(`${img}`, import.meta.url).href;
-        }
+    created() {
+        console.log(store.cards.length);
     },
 }
 
@@ -28,8 +26,8 @@ export default {
     <section class="main">
         <Selector />
         <div class="container">
-            <div class="row bg-white">
-                <div class="my_col col-sm-12 col-md-3" v-for="(card, index) in store.cards" >
+            <div class="row bg-white p-5">
+                <div class="my_col col-sm-12 col-md-4 col-lg-3" v-for="(card, index) in store.cards"  >
                     <Card :card="card" />
                 </div>
             </div>
