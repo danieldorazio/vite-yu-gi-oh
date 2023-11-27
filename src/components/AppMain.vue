@@ -1,16 +1,23 @@
 <script>
+import Selector from './AppSelector.vue';
+
 export default {
-    data () {
-        return
+    components: {
+        Selector,
     }
 }
 
 </script>
 
 <template>
-
-    <section class="main"></section>
+    <section class="main">
+        <Selector/>
+    </section>
 </template>
 
 <style scoped lang="scss">
+    @use '../style/partials/variables' as*;
+    .main {
+        background-color: $my_color_primary;
+    }
 </style>

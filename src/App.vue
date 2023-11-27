@@ -1,12 +1,10 @@
 <script>
 import Header from './components/AppHeader.vue';
-import Selector from './components/AppSelector.vue';
 import Main from './components/AppMain.vue';
 
 export default {
   components: {
     Header,
-    Selector,
     Main,
   }
 }
@@ -14,7 +12,6 @@ export default {
 
 <template>
   <Header/>
-  <Selector/>
   <Main/>
 </template>
 

@@ -18,5 +18,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../style/partials/AppHeader.scss'
+.logo {
+    height: 40px;
+}
 </style>

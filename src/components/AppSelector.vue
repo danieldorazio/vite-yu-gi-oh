@@ -1,15 +1,15 @@
 <script>
-export default {
-    data () {
-        return
-    }
-}
-
 </script>
 
 <template>
-    <section class="selectort"></section>
+    <section class="selectort">
+        <select class="custom-select">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </section>
 </template>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>
