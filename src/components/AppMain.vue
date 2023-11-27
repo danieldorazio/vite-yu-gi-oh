@@ -1,10 +1,12 @@
 <script>
 import Selector from './AppSelector.vue';
+import Card from './AppCard.vue';
 import { store } from "../store";
 
 export default {
     components: {
         Selector,
+        Card
     },
 
     data () {
@@ -28,13 +30,7 @@ export default {
         <div class="container">
             <div class="row bg-white">
                 <div class="my_col col-sm-12 col-md-3" v-for="(card, index) in store.cards" >
-                    <div class="card text-center">
-                        <!-- {{ card.card_images[0].image_url}} -->
-                        <img :src="getImagePath(card.card_images[0].image_url)" alt="">
-                    </div>
-                    <div>
-                        {{ card.name }}
-                    </div>
+                    <Card :card="card" />
                 </div>
             </div>
         </div>
