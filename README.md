@@ -7,5 +7,5 @@ Quando l'utente seleziona un valore dalla lista, viene effettuata una chiamata a
 
 Creare un componente che mostri il numero totale di risultati ottenuti.
 
-Nota:
+Nota
 Per capire come comunicare alle API l'archetipo, è necessario fare riferimento alla documentazione che trovate qui: https://ygoprodeck.com/api-guide/

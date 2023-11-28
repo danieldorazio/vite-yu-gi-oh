@@ -13,6 +13,7 @@ export default {
   },
 
   created() {
+    this.store.loading = true;
     axios
       .get(this.store.apiUrl, {
         params: {
@@ -23,6 +24,7 @@ export default {
       .then((resp) => {
         this.store.cards = resp.data.data;
         console.log(this.store);
+        this.store.loading = false;
       });
   },
 

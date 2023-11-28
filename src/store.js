@@ -6,4 +6,5 @@ export const store = reactive ({
     numeroElementi: 20,
     paginaIniziale: 0,
     archetype: "", 
+    loading: false,
 });

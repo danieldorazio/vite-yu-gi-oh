@@ -18,18 +18,19 @@ export default {
 
     methods: {
         chiamata() {
-            alert(this.store.archetype);
+            this.store.loading = true;
             axios
                 .get(this.store.apiUrl, {
                     params: {
                         num: this.store.numeroElementi,
                         offset: this.store.paginaIniziale,
-                        archetype: this.store.archetype
+                        // archetype: this.store.archetype ?? null
                     },
                 })
                 .then((resp) => {
                     this.store.cards = resp.data.data;
                     console.log(this.store);
+                    this.store.loading = false;
                 });
         }
     }
@@ -41,8 +42,9 @@ export default {
     <section class="main">
         <Selector @selectedValue="chiamata" />
         <div class="container">
-            <div class="row bg-white p-5">
-                <div class="my_col col-sm-12 col-md-4 col-lg-3 mb-5" v-for="(card, index) in store.cards">
+            <h2 v-if ="this.store.loading">Loading...</h2>
+            <div class="row  row-cols-sm-1 row-cols-md-3 row-cols-lg-5 bg-white p-5" v-else>
+                <div class="my_col mb-5" v-for="(card, index) in store.cards">
                     <Card :card="card" />
                 </div>
             </div>

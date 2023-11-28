@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <section class="header d-flex">
+    <section class="header ms-5 d-flex">
         <div class="logo">
             <img class="h-100" src="../assets/img/800px-Yu-Gi-Oh!_(Logo).jpg" alt="">
         </div>

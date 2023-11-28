@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <section class="my_card mx-auto text-center h-100">
+    <section class="my_card mx-auto text-center w-75 h-100">
         <div class="card my_card_img text-center mb-3">
             <img :src="card.card_images[0].image_url">
         </div>
@@ -25,7 +25,10 @@ export default {
 
 .my_card {
     background-color: $my_color_primary;
-    width: 200px;
+    
+    .my_card_name,.my_card_archetype {
+        font-size: .8rem;
+    }
     
 }
 </style>
