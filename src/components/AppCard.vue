@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <section class="my_card mx-auto text-center ">
+    <section class="my_card mx-auto text-center h-100">
         <div class="card my_card_img text-center mb-3">
             <img :src="card.card_images[0].image_url">
         </div>
