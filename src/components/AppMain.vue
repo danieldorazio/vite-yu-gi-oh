@@ -24,7 +24,7 @@ export default {
                     params: {
                         num: this.store.numeroElementi,
                         offset: this.store.paginaIniziale,
-                        // archetype: this.store.archetype ?? null
+                        archetype: this.store.archetype ?? null
                     },
                 })
                 .then((resp) => {
